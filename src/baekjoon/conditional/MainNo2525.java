@@ -1,4 +1,4 @@
-package baekjoon.repetitive;
+package baekjoon.conditional;
 
 import java.util.Scanner;
 
