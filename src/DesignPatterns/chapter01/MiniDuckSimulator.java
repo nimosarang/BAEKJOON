@@ -17,6 +17,7 @@ public class MiniDuckSimulator {
 }
 
 class ModelDuck extends Duck{
+
     public ModelDuck() {
         flyBehavior = new FlyNoWay();
         quackBehavior = new Quack();
@@ -28,7 +29,9 @@ class ModelDuck extends Duck{
     }
 
 }
+
 class MallardDuck extends Duck{
+
     public MallardDuck() {
         quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();

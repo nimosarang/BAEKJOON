@@ -1,0 +1,2 @@
+total is 70
+avg is 23.000000

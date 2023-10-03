@@ -19,9 +19,9 @@ public class FileOutputStreamTest02 {
         PrintWriter printWriter = new PrintWriter(fileOutputStream, true, Charset.forName("UTF-8"));
 
         // Binary로 저장
-        fileOutputStream.write(kor1);
-        fileOutputStream.write(kor2);
-        fileOutputStream.write(kor3);
+//        fileOutputStream.write(kor1);
+//        fileOutputStream.write(kor2);
+//        fileOutputStream.write(kor3);
 
         // ASCII로 저장
         printWriter.print(kor1);
