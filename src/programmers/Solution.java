@@ -1,26 +1,30 @@
 package programmers;
 
+import java.util.Arrays;
+
 public class Solution {
 
-    public int solution(String myString, String pat) {
+    public static int[] solution(int[] emergency) {
+        int[] answer = new int[emergency.length];
 
-        int answer = 0;
-        String str1 = myString.toLowerCase();
-        String str2 = pat.toLowerCase();
-
-        if (str1.contains(str2)){
-            answer = 1;
+        for(int i = 0; i < answer.length; i++){
+            if(answer[i] != 0){
+                continue;
+            }
+            int idx = 1;
+            for(int j = 0; j < answer.length; j++){
+                if(emergency[i] < emergency[j]){
+                    idx++;
+                }
+            }
+            answer[i] = idx;
         }
-
         return answer;
     }
 
     public static void main(String[] args) {
-
-        Solution solution = new Solution();
-        int solutioned = solution.solution("AbCdEfG", "aBc");
-        System.out.println(solutioned);
-
+        int[] emergency = {3, 76, 24};
+        Solution.solution(emergency);
     }
 
 }
